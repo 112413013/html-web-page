@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#000000,#1a1a1a,#000000);
+    font-family:Arial,sans-serif;
+    overflow:hidden;
+}
+
+.container{
+    text-align:center;
+}
+
+.logo img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    box-shadow:0 0 30px gold;
+}
+
+.rotate{
+    animation:spin 8s linear infinite;
+}
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+h1{
+    font-family:'Cinzel',serif;
+    color:#FFD700;
+    font-size:50px;
+    margin-top:20px;
+    text-shadow:0 0 15px gold;
+}
+
+h2{
+    font-family:'Great Vibes',cursive;
+    color:white;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+p{
+    color:#ddd;
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+.google-btn{
+    width:280px;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(90deg,#4285F4,#34A853,#FBBC05,#EA4335);
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.google-btn:hover{
+    transform:scale(1.05);
+}
+
+.signup-btn{
+    width:280px;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    background:gold;
+    color:black;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.signup-btn:hover{
+    background:#FFD700;
+    transform:scale(1.05);
+}
